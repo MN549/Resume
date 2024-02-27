@@ -1,0 +1,261 @@
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 50px;
+}
+
+#summary p {
+    max-width: 1000px; 
+    margin: 0 auto; 
+    text-align: center; 
+    color: #ffffff;
+}
+
+#first-page {
+    background-image: url('https://cdnb.artstation.com/p/assets/images/images/030/178/769/4k/surendra-rajawat-wtfi0986.jpg?1599832417');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.social-links {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.social-links a {
+    display: inline-block; 
+    margin: 0 10px; 
+}
+
+.social-links img {
+    width: 30px; 
+    height: auto; 
+}
+
+.social-links img:hover {
+    filter: invert(75%);
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(49, 49, 51, 0.295); 
+    padding: 05px 0; 
+    text-align: center; 
+    z-index: 1000;
+    font-size: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(236, 96, 8); 
+}
+
+.centered {
+    text-align: center;
+}
+
+.content {
+    padding: 10px;
+}
+
+section {
+    background-color: rgba(0, 93, 113, 0.8); 
+    margin-bottom: 20px;
+    padding: 15px;
+}
+#about {
+    text-align: center; 
+    background-color: #1f1e1e; 
+}
+#about p {
+    color: #ffffff;
+    width: 800px; /* Set the width of the paragraph */
+    margin: 0 auto; /* Center the paragraph horizontally */
+    font-size: 18px;
+}
+
+
+#about .profile-pic {
+    width: 150px; /* Set the width of the image */
+    height: 150px; /* Set the height of the image */
+    border-radius: 50%; /* Create a circular shape */
+    object-fit: cover; /* Ensure the image covers the entire space */
+    border: 2px solid #ffffff; /* Add a border to the image */
+    margin-bottom: 20px; /* Add some space below the image */
+}
+#education {
+    font-family: 'Lora', serif; /* Set Lora as the font family */
+    background-color: #f8f9fa; /* Light background color */
+    text-align: center; /* Center align the heading */
+}
+#education h2 {
+    color: #000000; /* Change to your desired color */
+}
+.education-container {
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Align text inside boxes to the left */
+    width: 800px; /* Set the width of the container */
+}
+
+.education-box {
+    width: 100%; /* Set the width of the boxes */
+    padding: 10px;
+    margin-bottom: 10px; /* Add margin between boxes */
+    background-color: #e9ecef; /* Dimmed background color */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+.degree-info p {
+    margin: 5px 0; /* Add margin between paragraphs */
+    text-align: center; /* Center-align the text */
+}
+
+.education-box:hover {
+    transform: scale(1.05); /* Increase size on hover */
+    box-shadow: #000000; /* Add a shadow on hover */
+}
+.degree-info p:first-child {
+    font-weight: bold; /* Make the first paragraph (degree) bold */
+}
+
+.degree-info p:nth-child(2) {
+    font-style: italic; /* Make the second paragraph (school) italic */
+}
+#education {
+    border-bottom: 2px solid #a3a0a0; /* Add a 1px solid border at the bottom */
+}
+#work-experience {
+    font-family: 'Lora', serif;
+    background-color: #ffffff; /* Change to your desired background color */
+    margin-top: 0px;
+}
+
+#work-experience h2 {
+    margin-bottom: 10px; /* Add margin below the heading */
+    color: #000;
+    font-size: 50px;
+    text-align: center;
+}
+
+.work-entry {
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Add margin below each work entry */
+}
+#work-experience {
+    border-bottom: 2px solid #a3a0a0; /* Add a 1px solid border at the bottom */
+}
+.category {
+    margin-bottom: 10px;
+}
+
+.toggle {
+    display: none;
+}
+#skills {
+    text-align: center;
+    background-color: #ffffff;
+}
+#skills h2{
+    color: #000;
+}
+
+.category {
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: left; /* Align text within the category box to the left */
+}
+
+.toggle {
+    display: none;
+}
+
+.category-label {
+    background-color: #9d9b9b;
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.skills {
+    display: none;
+    margin-top: 5px;
+    text-align: left; /* Align text within the skills list to the left */
+}
+
+.toggle:checked + .category-label + .skills {
+    display: block;
+}
+
+.skills li {
+    background-color: #e3e4e4;
+    padding: 5px 10px;
+    margin: 3px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.skills li:hover {
+    background-color: #e9ecef;
+}
+#skills {
+    font-family: 'Lora', serif;
+    border-bottom: 2px solid #a3a0a0; /* Add a 1px solid border at the bottom */
+}
+#goToTopButton {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+}
+
+
+
+
+
